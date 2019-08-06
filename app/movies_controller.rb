@@ -71,7 +71,7 @@ def can_be_found_updated_and_saved
   Movie.create(title: "Awesome Flick")
   attributes = {:title => "Awesome FLick"}
   Movie.find_by(attributes)
-  Movie.update(:title => "Even Awesome Flick")
+  Movie.update(:title => "Even Awesomer Flick")
 end
 
 def can_update_using_update_method
