@@ -76,8 +76,11 @@ end
 
 def can_update_using_update_method
   # Update movie title to "Wat, huh?"
+  attributes = {:title => "Wat?"}
+  
   Movie.create(title: "Wat?")
-  __
+  Movie.find_by(attributes)
+  Movie.update(:title => "Wat, huh?")
   __
 end
 
